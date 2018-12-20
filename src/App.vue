@@ -3,17 +3,20 @@
 		<Header/>
     <router-view/>
     <Footer/>
+    <Study/>
   </div>
 </template>
 
 <script>
 import Header from '@/pages/header'
 import Footer from '@/pages/footer'
+import Study from '@/pages/study'
 export default {
   name: 'App',
   components:{
   	Header,
-  	Footer
+  	Footer,
+    Study
   }
 }
 </script>

@@ -125,12 +125,83 @@
 						<a href="">保密学术论文</a>
 					</div>
 					<ul>
-						<li>assssdss</li>
+						<li><a href="">英国新闻出版泄密的法律控制及沟通机制</a></li>
+						<li><a href="">浅析新媒体的保密审查</a></li>
+						<li><a href="">我国政府数据开放中的个人隐私保护问题与对策</a></li>
+						<li><a href="">移动互联时代如何应对军事新闻传播的失泄密问题</a></li>
+						<li><a href="">谈谈英国保密法</a></li>
+						<li><a href="">影响定密工作因素分析与思考</a></li>
+						<li><a href="">国家秘密商业化还是商业秘密国家化</a></li>
+						<li><a href="">浅谈定密争议的制度完善</a></li>
+						<li><a href="">国家秘密鉴定若干问题探讨</a></li>
+						<li><a href="">试论定密工作中的行政监督管理</a></li>
+						<li><a href="">完善定密监督体系的构想</a></li>
+						<li><a href="">定密行为可诉性研究</a></li>
 					</ul>
 				</div>
 				<div class="paper_video">
-					<div class="paper_video_top"></div>
+					<div class="paper_video_top">
+						<a href="">视频教程</a>
+					</div>
+					<ul>
+						<li>
+							<a href="">
+								<img src="@/assets/paper_1.jpg" alt="">
+								<br>
+								<span>【案例警示】警钟长鸣—— ...</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="@/assets/paper_2.jpg" alt="">
+								<br>
+								<span>【案例警示】警钟长鸣—— ...</span>
+							</a>
+						</li>
+					</ul>
 				</div>
+			</div>
+			<!-- 保密经典课程 -->
+			<div class="content_course">
+				<ul class="course_left">
+					<li class="course_left_first">
+						<div>
+							<span>保密经典课程</span>
+							<a href="">共31门课程 [更多]</a>
+						</div>
+						<p>
+							分类：
+							<a href="">宣传视频</a>
+							<a href="">警示教育片</a>
+							<a href="">宣传课件</a>
+							<a href="">案例警示</a>
+						</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/course_1.jpg" alt="">
+							<br>
+							<span>【宣教视频】对外宣传和投寄稿件保密须知</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/course_2.jpg" alt="">
+							<br>
+							<span>【案例警示】图说保密法</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="course_center">
+					<li>
+						<img src="@/assets/course_3.jpg" alt="">
+						<br>
+						<span>【宣教小故事四】泄露国家秘密违法 举报泄密行为获奖</span>
+					</li>
+				</ul>
+				<ul class="course_right">
+					<li></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -138,9 +209,6 @@
 <style>
 	* {
 		box-sizing: border-box;
-	}
-	ul li {
-		list-style: none;
 	}
 	.study_banner_box {
 		width: 1200px;
@@ -161,6 +229,7 @@
 		color: #4284c4;
 	}
 	.study_banner .study_banner_list li {
+		list-style: none;
 		border: 2px solid #fff;
 		border-radius: 5px;
 		width: 300px;
@@ -203,6 +272,7 @@
 	.content_publicity ul li {
 		float: left;
 		width: 300px;
+		list-style: none;
 	}
 	.content_publicity ul li a:hover {
 		background-color: #eee;
@@ -290,9 +360,7 @@
 		line-height: 26px;
 		margin-right: 15px;
 		margin-bottom: 10px;
-		white-space:nowrap;
-		overflow:hidden;
-		text-overflow:ellipsis;
+		list-style: none;
 	}
 	.content_auditorium .auditorium_center .auditorium_center_right ul li a:hover {
 		color: red;
@@ -319,6 +387,7 @@
 	.content_auditorium .auditorium_list ul li {
 		border-bottom: 1px solid #e5e5e5;
 		padding-top: 3px;
+		list-style: none;
 	}
 	.content_auditorium .auditorium_list ul li a:hover {
 		color: red;
@@ -339,16 +408,118 @@
 		display: inline-block;
 		color: #999999;
 	}
-	.content_paper .paper_list {
-		
+	.content_paper {
+		margin-bottom: 30px;
 	}
-	.content_paper .paper_list .paper_list_top {
+	.content_paper::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.content_paper > div {
+		float: left;
+	}
+	.content_paper .paper_list {
+		width: 800px;
+	}
+	.content_paper .paper_list .paper_list_top,
+	.content_paper .paper_video .paper_video_top {
 		line-height: 45px;
 	}
-	.content_paper .paper_list .paper_list_top a {
+	.content_paper .paper_list .paper_list_top a,
+	.content_paper .paper_video .paper_video_top a {
 		font-size: 18px;
 	}
-	.content_paper .paper_list ul {
-		list-style-type: disc;
+	.content_paper .paper_list ul::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.content_paper .paper_list ul li:hover {
+		background-color: #efefef;
+	}
+	.content_paper .paper_list ul li:hover a {
+		color: red;
+	}
+	.content_paper .paper_list ul li {
+		color: red;
+		margin: 0 15px;
+		line-height: 30px;
+		width: 370px;
+		float: left;
+	}
+	.content_paper .paper_list ul li a {
+		color: #705984;
+	}
+	.content_paper .paper_video ul li {
+		float: left;
+		list-style: none;
+	}
+	.content_paper .paper_video ul li:first-child {
+		margin-right: 10px;
+	}
+	.content_paper .paper_video ul li a img {
+		height: 140px;
+		margin-bottom: 5px;
+	}
+	.content_course {
+		margin-bottom: 30px;
+	}
+	.content_course ul {
+		width: 390px;
+		margin-right: 10px;
+	}
+	.content_course ul::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.content_course ul li {
+		float: left;
+		list-style: none;
+		margin-bottom: 10px;
+
+	}
+	.content_course .course_left li a img {
+		height: 138px;
+	}
+	.content_course .course_left li a span {
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		width: 185px;
+		display: block;
+	}
+	.content_course .course_left .course_left_first {
+		padding-left: 20px;
+		background-color: #c3312a;
+		width: 380px;
+		height: 175px;
+	}
+	.content_course .course_left .course_left_first div {
+		margin-top: 56px;
+		color: #fff;
+	}
+	.content_course .course_left .course_left_first div span {
+		font-size: 22px;
+		font-weight: 500;
+	}
+	.content_course .course_left .course_left_first div a {
+		color: #fff;
+		padding-left: 15px;
+	}
+	.content_course .course_left .course_left_first p {
+		color: #fff;
+	}
+	.content_course .course_left .course_left_first p a {
+		color: #fff;
+		margin-right: 10px;
+	}
+	.content_course .course_left .course_left_first p a:hover,
+	.content_course .course_left .course_left_first div a:hover {
+		color: yellow
+	}
+	.content_course .course_center li img {
+		width: 380px;
 	}
 </style>
