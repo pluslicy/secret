@@ -1,5 +1,6 @@
 <template>
 	<div class="resource">
+<<<<<<< HEAD
 		<div class="resource_banner">
 			<div class="resource_banner_box">
 				<div class="resource_banner_box_left">
@@ -638,3 +639,8 @@
 	}
 
 </style>
+=======
+		保密资源
+	</div>
+</template>
+>>>>>>> b85b12fb6031624f0407f867121be91707208777
