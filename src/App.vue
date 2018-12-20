@@ -38,4 +38,7 @@ a {
   width: 1240px;
   margin: 0 auto;
 }
+li{
+  list-style: none;
+}
 </style>
