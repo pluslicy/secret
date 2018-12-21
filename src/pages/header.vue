@@ -57,17 +57,22 @@
 <style type="text/css">
 .header {
     width: 100%;
+    min-width: 1200px;
     height: 260px;
+    margin: 0 auto;
     background: url('../assets/top_bg.png') left top repeat-x;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-top {
-    width: 1200px;
+
+    min-width: 1200px;
     height: 42px;
     padding-top: 6px;
     margin: 0 auto;
-    /* background-color: pink; */
     position: relative;
+
 }
 
 .header-top img {
@@ -125,7 +130,7 @@
 }
 
 .header-foot {
-    width: 1200px;
+    min-width: 1200px;
     height: 47px;
     margin: 0 auto;
     line-height: 47px;
