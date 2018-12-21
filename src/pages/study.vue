@@ -32,7 +32,7 @@
 		<div class="study_content">
 			<!-- 保密宣传 -->
 			<div class="content_publicity">
-				<h3>保密宣传</h3>
+				<p>保密宣传</p>
 				<ul>
 					<li>
 						<div>
@@ -125,18 +125,54 @@
 						<a href="">保密学术论文</a>
 					</div>
 					<ul>
-						<li><a href="">英国新闻出版泄密的法律控制及沟通机制</a></li>
-						<li><a href="">浅析新媒体的保密审查</a></li>
-						<li><a href="">我国政府数据开放中的个人隐私保护问题与对策</a></li>
-						<li><a href="">移动互联时代如何应对军事新闻传播的失泄密问题</a></li>
-						<li><a href="">谈谈英国保密法</a></li>
-						<li><a href="">影响定密工作因素分析与思考</a></li>
-						<li><a href="">国家秘密商业化还是商业秘密国家化</a></li>
-						<li><a href="">浅谈定密争议的制度完善</a></li>
-						<li><a href="">国家秘密鉴定若干问题探讨</a></li>
-						<li><a href="">试论定密工作中的行政监督管理</a></li>
-						<li><a href="">完善定密监督体系的构想</a></li>
-						<li><a href="">定密行为可诉性研究</a></li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">英国新闻出版泄密的法律控制及沟通机制</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">浅析新媒体的保密审查</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">我国政府数据开放中的个人隐私保护问题与对策</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">移动互联时代如何应对军事新闻传播的失泄密问题</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">谈谈英国保密法</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">影响定密工作因素分析与思考</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">国家秘密商业化还是商业秘密国家化</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">浅谈定密争议的制度完善</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">国家秘密鉴定若干问题探讨</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">试论定密工作中的行政监督管理</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">完善定密监督体系的构想</a>
+						</li>
+						<li>
+							<i class="fa fa-square"></i>
+							<a href="">定密行为可诉性研究</a>
+						</li>
 					</ul>
 				</div>
 				<div class="paper_video">
@@ -194,13 +230,77 @@
 				</ul>
 				<ul class="course_center">
 					<li>
-						<img src="@/assets/course_3.jpg" alt="">
-						<br>
-						<span>【宣教小故事四】泄露国家秘密违法 举报泄密行为获奖</span>
+						<a href="">
+							<img src="@/assets/course_3.jpg" alt="">
+							<br>
+							<span>【宣教小故事四】泄露国家秘密违法 举报泄密行为获奖</span>
+						</a>
 					</li>
 				</ul>
 				<ul class="course_right">
-					<li></li>
+					<li>
+						<a href="">
+							<img src="@/assets/course_5.jpg" alt="">
+							<br>
+							<span>【宣教小故事三】军迷发帖上头条  敏感信息遭曝光</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/course_5.jpg" alt="">
+							<br>
+							<span>【宣教小故事二】淘汰设备须注意 稍不留神易泄密</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/course_5.jpg" alt="">
+							<br>
+							<span>【宣教视频】涉密会议、活动保密管理须知</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/course_7.jpg" alt="">
+							<br>
+							<span>【宣教视频】互联网计算机使用安全保密须知</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 快速自测 -->
+			<div class="content_test">
+				<a href="">
+					<img src="@/assets/study_test.png" alt="">
+				</a>
+			</div>
+			<!-- 疑难解答 -->
+			<div class="content_quick">
+				<ul>
+					<li>
+						<a href="">
+							<img src="@/assets/quick_1.jpg" alt="">
+							<span>疑难解答</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/quick_2.jpg" alt="">
+							<span>名词速查</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/quick_3.jpg" alt="">
+							<span>考试中心</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="@/assets/quick_4.jpg" alt="">
+							<span>法律法规</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -216,8 +316,11 @@
 		padding-top: 85px;
 		height: 470px;
 	}
+	.study {
+		background-color: #f9f8f3;
+	}
 	.study_banner {
-		background-image: url('../assets/study_bg.jpg');
+		background: url('../assets/study_bg.jpg') top left no-repeat;
 	}
 	.study_banner .study_banner_list {
 		float: right;
@@ -229,7 +332,7 @@
 		color: #4284c4;
 	}
 	.study_banner .study_banner_list li {
-		list-style: none;
+		/* list-style: none; */
 		border: 2px solid #fff;
 		border-radius: 5px;
 		width: 300px;
@@ -256,12 +359,14 @@
 	}
 	.study_content {
 		width: 1200px;
-		margin: 10px auto;
+		margin: 0px auto;
+		padding-top: 10px;
 	}
 	.content_publicity {
 		margin-bottom: 30px;
 	}
-	.content_publicity h3 {
+	.content_publicity > p {
+		font-size: 20px;
 		line-height: 58px;
 	}
 	.content_publicity ul::after {
@@ -272,7 +377,7 @@
 	.content_publicity ul li {
 		float: left;
 		width: 300px;
-		list-style: none;
+		/* list-style: none; */
 	}
 	.content_publicity ul li a:hover {
 		background-color: #eee;
@@ -360,7 +465,7 @@
 		line-height: 26px;
 		margin-right: 15px;
 		margin-bottom: 10px;
-		list-style: none;
+		/* list-style: none; */
 	}
 	.content_auditorium .auditorium_center .auditorium_center_right ul li a:hover {
 		color: red;
@@ -387,7 +492,7 @@
 	.content_auditorium .auditorium_list ul li {
 		border-bottom: 1px solid #e5e5e5;
 		padding-top: 3px;
-		list-style: none;
+		/* list-style: none; */
 	}
 	.content_auditorium .auditorium_list ul li a:hover {
 		color: red;
@@ -439,21 +544,27 @@
 		background-color: #efefef;
 	}
 	.content_paper .paper_list ul li:hover a {
-		color: red;
+		color: #c3312a;
 	}
 	.content_paper .paper_list ul li {
-		color: red;
+		color: #c3312a;
 		margin: 0 15px;
 		line-height: 30px;
+		height: 30px;
 		width: 370px;
 		float: left;
+	}
+	.content_paper .paper_list ul li i {
+		font-size: 4px;
+		position: relative;
+		bottom: 4px;
 	}
 	.content_paper .paper_list ul li a {
 		color: #705984;
 	}
 	.content_paper .paper_video ul li {
 		float: left;
-		list-style: none;
+		/* list-style: none; */
 	}
 	.content_paper .paper_video ul li:first-child {
 		margin-right: 10px;
@@ -464,10 +575,19 @@
 	}
 	.content_course {
 		margin-bottom: 30px;
+		overflow: hidden;
 	}
+	/* .content_course::after {
+		content: '';
+		display: block;
+		clear: both;
+	} */
 	.content_course ul {
-		width: 390px;
+		float: left;
 		margin-right: 10px;
+	}
+	.content_course ul:nth-child(3) {
+		margin-right: 0;
 	}
 	.content_course ul::after {
 		content: '';
@@ -476,14 +596,33 @@
 	}
 	.content_course ul li {
 		float: left;
-		list-style: none;
+		/* list-style: none; */
 		margin-bottom: 10px;
 
 	}
-	.content_course .course_left li a img {
-		height: 138px;
+	.content_course .course_left {
+		width: 380px;
 	}
-	.content_course .course_left li a span {
+	.content_course .course_left li:nth-child(2){
+		margin-right: 10px;
+	}
+	.content_course .course_left li a img:hover,
+	.content_course .course_right li a img:hover {
+		border-color: #c3312a;
+	}
+	.content_course .course_left li a img,
+	.content_course .course_right li a img {
+		height: 138px;
+		width: 184px;
+		background-color: #fff;
+		border: 1px solid #ccc;
+	}
+	.content_course .course_left li a span:hover,
+	.content_course .course_right li a span:hover {
+		color: #c3312a;
+	}
+	.content_course .course_left li a span,
+	.content_course .course_right li a span {
 		white-space:nowrap;
 		overflow:hidden;
 		text-overflow:ellipsis;
@@ -520,6 +659,52 @@
 		color: yellow
 	}
 	.content_course .course_center li img {
-		width: 380px;
+		width: 420px;
+		height: 320px;
+	}
+	.content_course .course_right {
+		width: 370px;
+	}
+	.content_test {
+		padding-bottom: 30px;
+	}
+	.content_test a:hover img {
+		border-color: #c3312a;
+	}
+	.content_test a img {
+		width: 1200px;
+		border: 1px solid #ccc;
+	}
+	.content_quick {
+		padding-bottom: 100px;
+	}
+	.content_quick ul {
+		overflow: hidden;
+	}
+	.content_quick ul li {
+		float: left;
+		width: 285px;
+		margin-right: 20px;
+		position: relative;
+	}
+	.content_quick ul li:nth-child(4) {
+		margin-right: 0;
+	}
+	.content_quick ul li a img:hover {
+		border-color: #c3312a;
+	}
+	.content_quick ul li a img {
+		width: 285px;
+		border: 1px solid #ccc;
+	}
+	.content_quick ul li a:hover span {
+		color: #c3312a;
+	}
+	.content_quick ul li a span {
+		font-size: 20px;
+		position: absolute;
+		top: 36px;
+		left: 20px;
+		font-weight: 500;
 	}
 </style>
