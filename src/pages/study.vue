@@ -240,30 +240,30 @@
 				<ul class="course_right">
 					<li>
 						<a href="">
-							<img src="@/assets/course_2.jpg" alt="">
+							<img src="@/assets/course_5.jpg" alt="">
 							<br>
-							<span>【案例警示】图说保密法</span>
+							<span>【宣教小故事三】军迷发帖上头条  敏感信息遭曝光</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src="@/assets/course_2.jpg" alt="">
+							<img src="@/assets/course_5.jpg" alt="">
 							<br>
-							<span>【案例警示】图说保密法</span>
+							<span>【宣教小故事二】淘汰设备须注意 稍不留神易泄密</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src="@/assets/course_2.jpg" alt="">
+							<img src="@/assets/course_5.jpg" alt="">
 							<br>
-							<span>【案例警示】图说保密法</span>
+							<span>【宣教视频】涉密会议、活动保密管理须知</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src="@/assets/course_2.jpg" alt="">
+							<img src="@/assets/course_7.jpg" alt="">
 							<br>
-							<span>【案例警示】图说保密法</span>
+							<span>【宣教视频】互联网计算机使用安全保密须知</span>
 						</a>
 					</li>
 				</ul>
@@ -613,6 +613,8 @@
 	.content_course .course_left li a img,
 	.content_course .course_right li a img {
 		height: 138px;
+		width: 184px;
+		background-color: #fff;
 		border: 1px solid #ccc;
 	}
 	.content_course .course_left li a span:hover,
