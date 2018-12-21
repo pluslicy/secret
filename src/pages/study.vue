@@ -207,7 +207,7 @@
 	</div>
 </template>
 <style>
-	* {
+	.study * {
 		box-sizing: border-box;
 	}
 	.study_banner_box {
