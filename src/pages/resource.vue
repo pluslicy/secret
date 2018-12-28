@@ -1,6 +1,5 @@
 <template>
 	<div class="resource">
-<<<<<<< HEAD
 		<div class="resource_banner">
 			<div class="resource_banner_box">
 				<div class="resource_banner_box_left">
@@ -205,18 +204,111 @@
 					</div>
 				</div>
 				<div class="right">
-					
+					<div class="top">
+						<h3>词条库</h3>
+						<a href="">更多>></a>
+					</div>
+					<div class="middle">
+						<img src="../assets/resource_09a.jpg" alt="">
+						<a href="">
+							<h3>保密</h3>
+							<p>“保密”顾名思义，就是保守秘密，是人或社会组织对与之相关的需要控制知悉范围的信息、反映信息的事项、承载信息的物质实 ......</p>
+						</a>
+					</div>
+					<div class="bottom">
+						<img src="../assets/resource_09a.jpg" alt="">
+						<a href="">
+							<h3>保密工作</h3>
+							<p>保密工作有广义和狭义之分。广义的保密工作，是指一切有保密需求的主体，为保守、保护涉及自身安全和利益的涉密信息、涉密 ......</p>
+						</a>
+					</div>
 				</div>
 			</div>
 			<!-- 数字期刊结束 -->
 			<!-- 数字图书开始 -->
-			<div class="resource_content_books"></div>
+			<div class="resource_content_books">
+				<div class="title">
+					<h3>数字图书</h3>
+					<a href="">更多>></a>
+				</div>
+				<div class="content">
+					<div class="content_left">
+						<a href=""><img src="../assets/20170301154332_895.png" alt=""></a>
+						<div class="book_details">
+							<h4>《领导干部和涉密人员保密行为手册》</h4>
+							<span>作者：本书编写组</span>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本书以保密法及保密法实施条例为依据，对领导干部和涉密人员的日常保密行为进行规范，分领导干部篇、涉密人员篇、涉密载体篇、网络和信息设备篇4个部分，将应知应会的保密知识、必须遵守的保密行为规范与典型窃密泄密警示案例相结合，灵活生动，警示效果强，是各地区各部门普及保密知识、加强保密宣教的重要参考资料。</p>
+							<a href="">更多内容</a>
+						</div>
+					</div>
+					<ul id="authors">
+						<li><!-- <i class="fa fa-square"></i> -->
+							<a href=""><<漫画 信息安全保密>></a>
+							<span>作者: 贺心海</span>
+						</li>
+						<li>
+							<a href=""><<中西情报思想史>></a>
+							<span>作者: 高金虎,吴晓晓</span>
+						</li>
+						<li>
+							<a href=""><<军统特务活动史>></a>
+							<span>作者: 马振犊,邢烨</span>
+						</li>
+						<li>
+							<a href=""><<中统特务活动史>></a>
+							<span>作者: 马振犊,林建英</span>
+						</li>
+						<li>
+							<a href=""><<中国公共安全评论(第一卷)>></a>
+							<span>作者: 朱正威,肖群鹰</span>
+						</li>
+						<li>
+							<a href=""><<中国文化安全评论(第一卷)>></a>
+							<span>作者: 韩源</span>
+						</li>
+						<li>
+							<a href=""><<保密法律法规知识读本>></a>
+							<span>作者: 国务院宝姿委保密办</span>
+						</li>
+						<li>
+							<a href=""><<保密日常管理实务指南>></a>
+							<span>作者: 国务院宝姿委保密办</span>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<!-- 数字图书结束 -->
 			<!-- 影像库开始 -->
-			<div class="resource_content_videos"></div>
+			<div class="resource_content_videos">
+				<div class="title">
+					<ul>
+						<li><a href="">影像库</a></li>
+						<li><a href="">警示教育片</a></li>
+						<li><a href="">案例警示</a></li>
+						<li><a href="">宣教课件</a></li>
+						<li><a href="">宣教视频</a></li>
+					</ul>
+					<a href="">更多>></a>
+				</div>
+				<div class="content">
+					<ul>
+						<li><a href=""><img src="../assets/20180523091258_174.jpg" alt=""></a><span>【宣教视频】保密要害部门部位管理保密须知</span></li>
+						<li><a href=""><img src="../assets/20180523091329_588.jpg" alt=""></a><span>【宣教视频】出国出境保密须知</span></li>
+						<li><a href=""><img src="../assets/20180523091344_145.jpg" alt=""></a><span>【宣教视频】私人生活和个人交往保密须知</span></li>
+						<li><a href=""><img src="../assets/20180523091416_393.jpg" alt=""></a><span>【宣教视频】涉密网络管理保密须知</span></li>
+					</ul>
+				</div>
+			</div>
 			<!-- 影像库结束 -->
 			<!-- 法律法规开始 -->
-			<div class="resource_content_law"></div>
+			<div class="resource_content_law">
+				<ul>
+					<li><a href="">法律法规</a><img src="../assets/resource_pic_06.png" alt=""></li>
+					<li><a href="">认证标准</a><img src="../assets/resource_pic_03.png" alt=""></li>
+					<li><a href="">试题库</a><img src="../assets/resource_pic_09.png" alt=""></li>
+					<li><a href="">技术方案</a><img src="../assets/resource_pic_11.png" alt=""></li>
+				</ul>
+			</div>
 			<!-- 法律法规结束 -->
 		</div>
 	</div>
@@ -346,7 +438,7 @@
 	.resource_content{
 		display: block;
 		width: 1200px;
-		height: 1948px;
+		height: 1910px;
 		overflow: hidden;
 		margin: 0 auto
 	}
@@ -434,7 +526,7 @@
 	.resource_content_information > .one .index_box > .style_two p a:hover{
 		color: red
 	}
-	.check{
+	.resource_content_information .check{
 		background-color: #f5f5f7
 	}
 
@@ -474,7 +566,7 @@
 	.resource_content_information > .two > .bottom > .one > .one_middle{
 		width: 400px;
 		float: left;
-		margin: 0 0 14px 0;
+		margin: 50px 0 14px -405px;
 	}
 	.resource_content_information > .two > .bottom > .one > .one_middle img{
 		width: 150px;
@@ -489,7 +581,6 @@
 	}
 	.resource_content_information > .two > .bottom > .one > p{
 		width: 400px;
-		float: left;
 		font-size: 14px;
 		color: #1c1c1c;
 		padding-bottom: 40px;
@@ -567,7 +658,11 @@
 	}
 	.resource_content_information > .three > ul > li > a{
 		/*文本不换行*/
-		white-space: nowrap;  
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		width: 260px;
+		display: block;
 	}
 	.resource_content_information > .three > ul > li > a:hover{
 		color: red
@@ -637,10 +732,297 @@
 		border:1px solid #dadada;
 		background-color: #fff
 	}
+	.resource_content_periodical > .right > .top{
+		width: 258px;
+		margin-top: 19px;
+		margin-left: 24px;
+		overflow: hidden;
+		border-bottom:1px solid #d5c594;
+	}
+	.resource_content_periodical > .right > .top > h3{
+		color: #c90000;
+		float: left;
+		font-size: 18px;
+		border-bottom: 1px solid #811a1a
+	}
+	.resource_content_periodical > .right > .top > a{
+		float: right;
+		font-size: 14px;
+		color: #811a1a
+	}
+	.resource_content_periodical > .right > .middle {
+		width: 258px;
+		overflow: hidden;
+		margin-top: 16px;
+		margin-left: 24px;
+		border-bottom: 1px solid #e3e3e3
+	}
+	.resource_content_periodical > .right > .middle img{
+		width: 45px;
+		height: 45px;
+		padding: 2px;
+		border:1px solid #d0ded0;
+		float: left;
+	}
+	.resource_content_periodical > .right > .middle a{
+		width: 196px;
+		float: right;
+	}
+	.resource_content_periodical > .right > .middle h3{
+		font-size: 15px;
+		margin-bottom: 4px;
+		float: left;
+	}
+	.resource_content_periodical > .right > .middle p{
+		width: 196px;
+		font-size: 13px;
+		color: #595959;
+		margin-bottom: 11px;
+		float: left;
+	}
+	.resource_content_periodical > .right > .bottom{
+		width: 258px;
+		overflow: hidden;
+		margin-top: 16px;
+		margin-left: 24px;
+		border-bottom: 1px solid #e3e3e3
+	}
+	.resource_content_periodical > .right > .bottom img{
+		width: 45px;
+		height: 45px;
+		padding: 2px;
+		border:1px solid #d0ded0;
+		float: left;
+	}
+	.resource_content_periodical > .right > .bottom a{
+		width: 196px;
+		float: right;
+	}
+	.resource_content_periodical > .right > .bottom h3{
+		font-size: 15px;
+		margin-bottom: 4px;
+		float: left;
+	}
+	.resource_content_periodical > .right > .bottom p{
+		width: 196px;
+		font-size: 13px;
+		color: #595959;
+		margin-bottom: 11px;
+		float: left;
+	}
 
+	.resource_content_books{
+		margin-top: 20px;
+		margin-bottom: 13px;
+		background-color: #fff;
+		border: 1px solid #dadada;
+		overflow: hidden;
+		float: left;
+	}
+	.resource_content_books > .title{
+		margin-top: 19px;
+		margin-left: 24px;
+		float: left;
+		width: 1150px;
+		overflow: hidden;
+		border-bottom: 1px solid #d5c594
+	}
+	.resource_content_books > .title h3{
+		float: left;
+		font-size: 18px;
+		border-bottom:1px solid #811a1a;
+		color:#c90000;
+	}
+	.resource_content_books > .title a{
+		float: right;
+		font-size: 14px;
+		color: #c90000;
+		font-weight: bolder;
+	}
+	.resource_content_books > .content{
+		margin: 29px 0 26px 34px;
+		overflow: hidden;
+		width: 1136px;
+	}
+	.resource_content_books > .content > .content_left{
+		float: left;
+		width: 646px;
+		overflow: hidden;
+		margin-top: 26px
+	}
+	.resource_content_books > .content > .content_left img{
+		width: 213px;
+		height: 284px;
+		float: left;
+	}
+	.resource_content_books > .content > .content_left > .book_details{
+		overflow: hidden;
+	}
+	.resource_content_books > .content > .content_left > .book_details h4{
+		font-size: 16px;
+		color: #3e4347;
+		line-height: 25px
+	}
+	.resource_content_books > .content > .content_left > .book_details span{
+		line-height: 42px;
+		color: #6a6a6a
+	}
+	.resource_content_books > .content > .content_left > .book_details p{
+		line-height: 28px;
+		color: #999
+	}
+	.resource_content_books > .content > .content_left > .book_details  a{
+		text-align: right;
+		color: #c90000;
+		margin-left:365px
+	}
+	.resource_content_books > .content > ul{
+		float: right;
+		width: 446px;
+		overflow: hidden;
+	}
+	.resource_content_books > .content > ul > li{
+		list-style: disc;
+		width: 100%;
+		overflow: hidden;
+		border-bottom: 1px solid #d8d8d8;
+		font-size: 14px;
+		line-height: 31px;
+	}
+	.resource_content_books > .content > ul > li i{
+		color: #c90000;
+		font-size: 2px;
+	}
+	.resource_content_books > .content > ul > li a{
+		color: #595959;
+		display: inline-block;
+		width: 290px;
+	}
+	.resource_content_books > .content > ul > li span{
+		color: #878787;
+		width: 135px;
+		display: inline-block;
+		height: 28px;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+	.resource_content_books > .content > ul > li:hover{
+		border-bottom: 1px solid #c90000;
+	}
+	.resource_content_books > .content > ul > li a:hover{
+		color: #c90000;
+	}
+
+	.resource_content_videos{
+		background-color: #fff;
+		border:1px solid #dadada;
+		overflow: hidden;
+	}
+	.resource_content_videos > .title{
+		margin-top: 19px;
+		margin-left: 24px;
+		overflow: hidden;
+		width: 1154px;
+		border-bottom: 1px solid #d5c594
+	}
+	.resource_content_videos > .title > ul > li{
+		font-size: 18px;
+		float: left;
+		margin-right: 40px;
+		/*width: 110px;*/
+		/*text-align: center;*/
+	}
+	.resource_content_videos > .title > ul > li:first-child{
+		border-bottom: 1px solid #811a1a
+	}
+	.resource_content_videos > .title > a{
+		float: right;
+		font-size: 14px;
+		color: #c90000;
+		font-weight: bolder;
+	}
+	.resource_content_videos > .content{
+		width: 1136px;
+		margin: 29px 0 26px 34px;
+		overflow: hidden;
+	}
+	.resource_content_videos > .content ul{
+		overflow: hidden;
+	}
+	.resource_content_videos > .content li{
+		width: 284px;
+		float: left;
+		overflow: hidden;
+	}
+	.resource_content_videos > .content li a{
+		overflow: hidden;
+	}
+	.resource_content_videos > .content li img{
+		width: 270px;
+		height: 202px;
+		margin: 0 auto;
+		display: block;
+	}
+	.resource_content_videos > .content li span{
+		text-align: center;
+		display: block;
+		margin-top: 5px;
+	}
+
+	.resource_content_law{
+		margin-top: 13px;
+		background-color: #fff;
+		border:1px solid #dadada;
+		overflow: hidden;
+	}
+	.resource_content_law > ul{
+		width: 1184px;
+		height: 162px;
+		overflow: hidden;
+		margin-top: 15px;
+		margin-left: 18px;
+		/*background-image: url(../assets/resource_pic.jpg);*/
+	}
+	.resource_content_law > ul li{
+		width: 280px;
+		height: 150px;
+		margin-right: 10.5px;
+		float: left;
+		border:1px solid #e2e2e2;
+		position: relative;
+	}
+	.resource_content_law > ul li:hover{
+		border:1px solid #c90000;
+	}
+	.resource_content_law > ul li a{
+		font-size: 22px;
+		padding-left: 15px;
+		color: #313130;
+		padding-top: 100px;
+		z-index: 1000;
+		position: absolute;
+		top:-46px;
+	}
+	.resource_content_law > ul li img{
+		float: right;
+	}
+	.resource_content_law > ul li:first-child img{
+		width: 190px;
+		margin-top: 18px
+	}
+	.resource_content_law > ul li:last-child img{
+		width: 130px;
+		height: 120px;
+		margin-top: 24px;
+		margin-right: 30px
+	}
+	.resource_content_law > ul li:nth-child(2) img{
+		width: 170px;
+		margin-top: 8px
+	}
+	.resource_content_law > ul li:nth-child(3) img{
+		width: 180px;
+		margin-top: 30px
+	}
 </style>
-=======
-		保密资源
-	</div>
-</template>
->>>>>>> b85b12fb6031624f0407f867121be91707208777
