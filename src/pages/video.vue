@@ -39,63 +39,32 @@
 			  		<!-- 列表 -->
 						<div class="left_list">
 							<el-row :gutter="20">
-							  <el-col :span="8">
+							  <el-col :span="8" v-for='d in datas'>
 							  	<div class="left_details">
 							  		<a href="">
 							  			<img src="@/assets/video_1.jpg" alt="">
-							  			<span>【案例警示】警钟长鸣——最新窃密泄密案例 </span>
+							  			<span>{{d.name}} </span>
 							  		</a>
 							  		<div>
 							  			<i class="fa fa-clock-o"></i>
-							  			<span>2018-08-09</span>
+							  			<span>{{d.time}}</span>
 							  		</div>
-							  		<p>定价：￥16.00</p>
-							  	</div>
-							  </el-col>
-							  <el-col :span="8">
-							  	<div class="left_details">
-							  		<a href="">
-							  			<img src="@/assets/video_1.jpg" alt="">
-							  			<span>【案例警示】警钟长鸣——最新窃密泄密案例 </span>
-							  		</a>
-							  		<div>
-							  			<i class="fa fa-clock-o"></i>
-							  			<span>2018-08-09</span>
-							  		</div>
-							  		<p>定价：￥16.00</p>
-							  	</div>
-							  </el-col>
-							  <el-col :span="8">
-							  	<div class="left_details">
-							  		<a href="">
-							  			<img src="@/assets/video_1.jpg" alt="">
-							  			<span>【案例警示】警钟长鸣——最新窃密泄密案例 </span>
-							  		</a>
-							  		<div>
-							  			<i class="fa fa-clock-o"></i>
-							  			<span>2018-08-09</span>
-							  		</div>
-							  		<p>定价：￥16.00</p>
-							  	</div>
-							  </el-col>
-							  <el-col :span="8">
-							  	<div class="left_details">
-							  		<a href="">
-							  			<img src="@/assets/video_1.jpg" alt="">
-							  			<span>【案例警示】警钟长鸣——最新窃密泄密案例 </span>
-							  		</a>
-							  		<div>
-							  			<i class="fa fa-clock-o"></i>
-							  			<span>2018-08-09</span>
-							  		</div>
-							  		<p>定价：￥16.00</p>
+							  		<p>定价：￥{{d.price}}</p>
 							  	</div>
 							  </el-col>
 							</el-row>
 						</div>
 						<!-- 分页 -->
 						<div class="left_pagination">
-							
+							<el-pagination
+						      @size-change="handleSizeChange"
+						      @current-change="handleCurrentChange"
+						      :current-page="currentPage4"
+						      :page-sizes="[10, 20, 30, 40]"
+						      :page-size="10"
+						      layout="total, sizes, prev, pager, next, jumper"
+						      :total="40">
+						    </el-pagination>
 						</div>
 			  	</div>
 			  </el-col>
@@ -110,7 +79,35 @@
 			  			<ul>
 			  				<li>
 			  					<i class="fa fa-angle-right"></i>
-			  					数字
+			  					数字期刊
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-angle-right"></i>
+			  					数字图书
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-angle-right"></i>
+			  					论文库
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-angle-right"></i>
+			  					词条库
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-angle-right"></i>
+			  					专题库
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-angle-right"></i>
+			  					案例库
+			  				</li>
+			  				<li style="border-color:#c90000;">
+			  					<i class="fa fa-angle-right" style="display:block;"></i>
+			  					影像库
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-angle-right"></i>
+			  					试题库
 			  				</li>
 			  			</ul>
 			  		</div>
@@ -119,12 +116,72 @@
 			  				<p>推荐课程</p>
 			  				<div style="width:110px; border-bottom:2px solid #c90000; position:absolute;top:40px;left:0px;"></div>
 			  			</div>
+			  			<ul>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【案例警示】信息系统和信息设备管理保密须知</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教视频】互联网计算机使用安全保密须知</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【案例警示】泄密就在身边案例</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教视频】警惕身边的泄密隐患</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【案例警示】警钟长鸣——最新窃密泄密案例</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【案例警示】图说保密法</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">保密宣传教育多媒体展示片（古典文化篇样片）之七</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">保密宣传教育多媒体展示片（古典文化篇样片）之二</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">保密宣传教育多媒体展示片（古典文化篇样片）之三</a>
+			  				</li>
+			  			</ul>
 			  		</div>
 			  		<div class="right_class">
 			  			<div>
 			  				<p>讲座推荐</p>
 			  				<div style="width:110px; border-bottom:2px solid #c90000; position:absolute;top:40px;left:0px;"></div>
 			  			</div>
+			  			<ul>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教视频】涉密会议、活动保密管理须知</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教小故事四】泄露国家秘密违法 举报泄密行为获奖</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教小故事三】军迷发帖上头条  敏感信息遭曝光</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教小故事二】淘汰设备须注意 稍不留神易泄密</a>
+			  				</li>
+			  				<li>
+			  					<i class="fa fa-square"></i>
+			  					<a href="">【宣教小故事一】社会交往要警惕 日常交流不涉密</a>
+			  				</li>
+			  			</ul>
 			  		</div>
 			  	</div>
 			  </el-col>
@@ -137,22 +194,47 @@
 		data(){
 			return {
 				options: [{
-          value: 'all',
-          label: '全部内容'
-        }, {
-          value: 'option1',
-          label: '警示教育片'
-        }, {
-          value: 'option2',
-          label: '案例警示'
-        }, {
-          value: 'option3',
-          label: '宣教课件'
-        }, {
-          value: 'option4',
-          label: '宣教视频'
-        }],
-        value:''
+		          value: 'all',
+		          label: '全部内容'
+		        }, {
+		          value: 'option1',
+		          label: '警示教育片'
+		        }, {
+		          value: 'option2',
+		          label: '案例警示'
+		        }, {
+		          value: 'option3',
+		          label: '宣教课件'
+		        }, {
+		          value: 'option4',
+		          label: '宣教视频'
+		        }],
+		        value:'',
+		        datas:[{
+		        	name:'【案例警示】警钟长鸣——最新窃密泄密案例',
+		        	time:'2018-08-09',
+		        	price:'16.00',
+		        },{
+		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'12.00',
+		        },{
+		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'12.00',
+		        },{
+		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'12.00',
+		        },{
+		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'12.00',
+		        },{
+		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'12.00',
+		        }]
 			}
 		}
 	}
@@ -239,6 +321,9 @@
 	.content_left .left_pagination {
 		padding-top: 30px;
 		border-top: 1px solid #ccc;
+		text-align: right;
+		padding-right: 30px;
+		padding-bottom: 30px;
 	}
 	.video_content .content_right {
 		
@@ -260,16 +345,56 @@
 		padding-left: 15px;
 		color: #c90000;
 	}
+	.content_right .right_column > ul li:hover {
+		border-color: #c90000;
+	}
 	.content_right .right_column > ul li {
 		border: 1px solid #ccc;
 		font-size: 16px;
 		text-align: center;
 		line-height: 40px;
 		height: 40px;
-		margin-top: 15px;
+		margin: 15px;
+		position: relative;
+	}
+	.content_right .right_column > ul li:hover i {
+		display: block;
 	}
 	.content_right .right_column > ul > li > i {
 		font-size: 20px;
+		font-weight: 600;
 		position: absolute;
+		top: 10px;
+		left: 30px;
+		display: none;
+		color: #c90000;
+	}
+	.content_right .right_course > ul,
+	.content_right .right_class > ul {
+		padding: 20px 10px 0;
+	}
+	.content_right .right_course > ul > li,
+	.content_right .right_class > ul > li {
+		line-height: 2em;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		width: 265px;
+	}
+	.content_right .right_course > ul > li > i,
+	.content_right .right_class > ul > li > i {
+		font-size: 4px;
+		position: relative;
+		bottom: 4px;
+		color: #c90000;
+		padding-right: 5px;
+	}
+	.content_right .right_course > ul > li:hover a,
+	.content_right .right_class > ul > li:hover a {
+		color: #c90000;
+	}
+	.content_right .right_course > ul > li > a,
+	.content_right .right_class > ul > li > a {
+
 	}
 </style>
