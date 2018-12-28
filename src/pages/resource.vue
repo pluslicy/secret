@@ -373,7 +373,10 @@
 		/*margin-top: 41px*/
 	}
 	.resource > .resource_banner > .resource_banner_box > .resource_banner_box_left > .resource_banner_box_left_one > .txt > p{
-		color: #999
+		color: #999;
+		font-size: 13px;
+		margin-left: 14px;
+		width: 222px;
 	}
 	.resource > .resource_banner > .resource_banner_box > .resource_banner_box_right{
 		margin-left: 870px

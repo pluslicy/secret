@@ -6,9 +6,22 @@
 					<div class="books_one">
 						<div class="left">
 							<div class="block">
-						      <el-carousel trigger="click" height="150px">
-						        <el-carousel-item v-for="item in 4" :key="item">
-						          <h3>{{ item }}</h3>
+						      <el-carousel trigger="click">
+						        <el-carousel-item>
+						          <!-- <img :src="item.img" alt="tupianzhaobudaole"> -->
+						          <img src="../assets/20180518144309_317 (1).jpg" alt="">
+						        </el-carousel-item>
+						        <el-carousel-item>
+						          <!-- <img :src="item.img" alt="tupianzhaobudaole"> -->
+						          <img src="../assets/20180518144436_49.jpg" alt="">
+						        </el-carousel-item>
+						        <el-carousel-item>
+						          <!-- <img :src="item.img" alt="tupianzhaobudaole"> -->
+						          <img src="../assets/20180518144720_419.jpg" alt="">
+						        </el-carousel-item>
+						        <el-carousel-item>
+						          <!-- <img :src="item.img" alt="tupianzhaobudaole"> -->
+						          <img src="../assets/20180518144828_96 (1).jpg" alt="">
 						        </el-carousel-item>
 						      </el-carousel>
 						    </div>
@@ -352,10 +365,36 @@
 			</div>
 		</div>
 		<div class="adv">
-			
+			<a href="">0</a>
 		</div>
 	</div>
 </template>
+
+<script>
+	export default{
+		data(){
+			return{
+				images:[{
+					id:1,
+				    url:'',
+				    img:'@/assets/20181012091502_726.jpg'
+				},{
+					id:2,
+					url:'',
+				    img:'@/assets/20181012091502_726.jpg'
+				},{
+					id:3,
+					url:'',
+				    img:'@/assets/20181012091502_726.jpg'
+				},{
+					id:4,
+					url:'',
+				    img:'@/assets/20181012091502_726.jpg'
+				}]
+			}
+		}
+	}
+</script>
 
 <style>
 	template{
@@ -425,6 +464,19 @@
 		margin-right: 10px;
 		margin-top: 12px
 	}
+	.books_one img{
+		width: 100%;
+		height: 100%
+	}
+	.books_one > .left .block{
+		height: 100%
+	}
+	.books_one > .left .block .el-carousel{
+		height: 341px
+	}
+	.books_one > .left .block .el-carousel div {
+		height: 341px
+	}
 
 	.books_two{
 		margin: 0 10px 50px 10px;
@@ -437,7 +489,7 @@
 		overflow: hidden;
 	}
 	.books_two > .left > .title{
-		background-image: url(../assets/Shop_15.png);
+		background-image: url('../assets/Shop_15.png');
 		background-repeat: no-repeat;
 		background-color: #e7e7e7;
 		overflow: hidden;
@@ -478,6 +530,7 @@
 		text-align: center;
 		background-color: #eee;
 		display: block;
+		overflow: hidden;
 	}
 	.books_two > .left > ul > li a:nth-child(2):hover{
 		color: #c90000
@@ -918,4 +971,20 @@
 		font-weight: bold;
 	}
 
+	.adv{
+		position: fixed;
+		top: 350px;
+		left: 1555px;
+		background-image: url('../assets/shopping_cart1.png');
+		width: 60px;
+		height: 168px;
+		overflow: hidden;
+	}
+	.adv a{
+		font-size: 24px;
+		color: #ffec00;
+		padding-left: 22px;
+		padding-top: 80px;
+		display: block;
+	}
 </style>
