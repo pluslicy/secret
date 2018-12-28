@@ -39,7 +39,7 @@
 			  		<!-- 列表 -->
 						<div class="left_list">
 							<el-row :gutter="20">
-							  <el-col :span="8" v-for='d in datas'>
+							  <el-col :span="8" v-for='d in datas' :key='d.id'>
 							  	<div class="left_details">
 							  		<a href="">
 							  			<img src="@/assets/video_1.jpg" alt="">
@@ -59,7 +59,7 @@
 							<el-pagination
 						      @size-change="handleSizeChange"
 						      @current-change="handleCurrentChange"
-						      :current-page="currentPage4"
+						      :current-page="1"
 						      :page-sizes="[10, 20, 30, 40]"
 						      :page-size="10"
 						      layout="total, sizes, prev, pager, next, jumper"
@@ -211,30 +211,44 @@
 		        }],
 		        value:'',
 		        datas:[{
+		        	id:1,
 		        	name:'【案例警示】警钟长鸣——最新窃密泄密案例',
 		        	time:'2018-08-09',
 		        	price:'16.00',
 		        },{
+		        	id:2,
 		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
 		        	time:'2018-07-03',
 		        	price:'12.00',
 		        },{
+		        	id:3,
+		        	name:'保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'19.00',
+		        },{
+		        	id:4,
 		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
+		        	time:'2018-07-03',
+		        	price:'18.00',
+		        },{
+		        	id:5,
+		        	name:'保密要害部门部位管理保密须知 ',
 		        	time:'2018-07-03',
 		        	price:'12.00',
 		        },{
+		        	id:6,
 		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
 		        	time:'2018-07-03',
-		        	price:'12.00',
-		        },{
-		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
-		        	time:'2018-07-03',
-		        	price:'12.00',
-		        },{
-		        	name:'【宣教视频】保密要害部门部位管理保密须知 ',
-		        	time:'2018-07-03',
-		        	price:'12.00',
+		        	price:'16.00',
 		        }]
+			}
+		},
+		methods:{
+			handleSizeChange(){
+
+			},
+			handleCurrentChange(){
+
 			}
 		}
 	}
